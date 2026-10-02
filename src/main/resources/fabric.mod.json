@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "random",
+	"version": "${version}",
+	"name": "Random Stuff",
+	"description": "This is a random mod that adds a whole bunch of Random stuff that is really weird yet works together.",
+	"authors": [
+		"Cooldude1259"
+	],
+	"contact": {
+		"homepage": "https://github.com/Cooldude1259",
+		"sources": "https://github.com/Cooldude1259/random-stuff-1.21.1"
+	},
+	"license": "MIT",
+	"icon": "assets/random/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.cooldude1259.random.RandomStuff"
+		],
+		"fabric-datagen": [
+			"com.cooldude1259.random.RandomStuffDataGenerator"
+		],
+        "client": [
+            "com.cooldude1259.random.RandomStuffClient"
+        ]
+	},
+	"mixins": [
+		"random.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
